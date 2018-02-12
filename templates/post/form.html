@@ -1,0 +1,15 @@
+
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+    <form method="post">
+        {% csrf_token %}
+        <h1>form</h1>
+        {{ form.as_p}}
+        <input type="submit" value="gönder">
+    </form>
+
+{% endblock %}
+

@@ -1,0 +1,19 @@
+
+
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{%block title%}django dersleri{%endblock%}</title>
+</head>
+<body>
+
+    {%include 'messages.html'%}
+
+
+    {% block body %}
+
+    {% endblock %}
+</body>
+</html>
